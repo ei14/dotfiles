@@ -1,0 +1,16 @@
+set delete=no
+
+set editor=vim
+set sort=reverse-date-received
+
+set mail_check = 60
+
+# [REDACTED]
+# [REDACTED]
+bind index G imap-fetch-mail
+
+source "~/.mutt/tbk283.muttrc"
+folder-hook $folder "source ~/.mutt/tbk283.muttrc"
+
+source "~/.mutt/thomas.muttrc"
+folder-hook $folder "source ~/.mutt/thomas.muttrc"

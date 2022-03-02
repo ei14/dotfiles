@@ -1,0 +1,7 @@
+#!/bin/sh
+vol=$(amixer sget Master | sed -ne "5{s/.*Mono: Playback \([^ ]*\).*/\1/;p}")
+if [ $(($vol % 19)) == 6 ] || [ $vol == 114 ]; then
+	amixer -q sset Master 7+
+else
+	amixer -q sset Master 6+
+fi

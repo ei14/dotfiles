@@ -1,0 +1,27 @@
+set folder = imaps://imap.example.com/
+set imap_user = example@example.com
+set imap_pass = "example"
+set spoolfile = +INBOX
+mailboxes = +INBOX
+
+set header_cache = ~/.cache/mutt/example
+set message_cachedir = "~/.cache/mutt/example"
+unset imap_passive
+set imap_keepalive = 300
+
+set postponed = +INBOX/Drafts
+set record = +INBOX/Sent
+set my_pass = "example"
+set my_user = example@example.com
+
+set realname = "Example Example"
+set from = example@example.com
+set use_from = yes
+
+set smtp_pass = $my_pass
+set smtp_url = smtps://$my_user@example.example.com
+set ssl_force_tls = yes
+
+set smtp_authenticators = "login"
+
+account-hook $folder "set imap_user=example@example.com imap_pass='example'"
