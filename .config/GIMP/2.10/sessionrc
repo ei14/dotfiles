@@ -103,7 +103,7 @@
     (size 1139 680))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
-    (position 180 20)
+    (position 784 57)
     (size 486 648))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")

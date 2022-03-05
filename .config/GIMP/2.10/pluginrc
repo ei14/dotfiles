@@ -8160,5 +8160,24 @@
         (proc-arg 16 "drawable" "Input drawable (not used)")
         (proc-arg 0 "link-after-alignment" "Link the visible layers after alignment { TRUE, FALSE }")
         (proc-arg 0 "use-bottom" "use the bottom layer as the base of alignment { TRUE, FALSE }")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/gmic_gimp_qt/gmic_gimp_qt" 1642610351
+    (proc-def "plug-in-gmic-qt" 1
+         "G'MIC-Qt (3.0.2)"
+         "G'MIC-Qt (3.0.2)"
+         "Sébastien Fourey"
+         "Sébastien Fourey"
+         "2017"
+         "_G'MIC-Qt..."
+         1
+        (menu-path "<Image>/Filters")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         6 0
+        (proc-arg 0 "run-mode" "Interactive, non-interactive")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable (unused)")
+        (proc-arg 0 "input" "Input layers mode, when non-interactive (0=none, 1=active, 2=all, 3=active & below, 4=active & above, 5=all visibles, 6=all invisibles)")
+        (proc-arg 0 "output" "Output mode, when non-interactive (0=in place,1=new layers,2=new active layers,3=new image)")
+        (proc-arg 4 "command" "G'MIC command string, when non-interactive")))
 
 # end of pluginrc

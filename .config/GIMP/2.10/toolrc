@@ -37,7 +37,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-by-color-select-tool")
+    (active-tool "gimp-fuzzy-select-tool")
     (children
         (GimpToolInfo "gimp-fuzzy-select-tool"
             (icon-name "gimp-tool-fuzzy-select")
@@ -50,7 +50,7 @@
     (visible yes))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-flip-tool")
+    (active-tool "gimp-scale-tool")
     (children
         (GimpToolInfo "gimp-unified-transform-tool"
             (icon-name "gimp-tool-unified-transform")
@@ -78,7 +78,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-cage-tool")
+    (active-tool "gimp-warp-tool")
     (children
         (GimpToolInfo "gimp-warp-tool"
             (icon-name "gimp-tool-warp")
@@ -98,7 +98,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-pencil-tool")
+    (active-tool "gimp-paintbrush-tool")
     (children
         (GimpToolInfo "gimp-paintbrush-tool"
             (icon-name "gimp-tool-paintbrush")
@@ -133,7 +133,7 @@
             (visible yes))))
 (GimpToolGroup "tool group"
     (visible yes)
-    (active-tool "gimp-smudge-tool")
+    (active-tool "gimp-convolve-tool")
     (children
         (GimpToolInfo "gimp-smudge-tool"
             (icon-name "gimp-tool-smudge")

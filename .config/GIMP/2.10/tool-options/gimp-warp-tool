@@ -1,5 +1,6 @@
 # GIMP gimp-warp-tool options
 
-(effect-size 64)
+(effect-size 9)
+(effect-strength 100)
 
 # end of gimp-warp-tool options
