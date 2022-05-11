@@ -3,6 +3,7 @@ main:
 	~/.bg.gif \
 	~/.cmd \
 	~/.dwm \
+	~/.icons \
 	~/.suckless \
 	~/.gtkrc-2.0 \
 	~/.xinitrc \
