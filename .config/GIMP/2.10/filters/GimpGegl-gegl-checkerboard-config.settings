@@ -1,0 +1,36 @@
+# settings
+
+(GimpGegl-gegl-checkerboard-config "2022-04-28 15:57:39"
+    (time 1651179459)
+    (x 1)
+    (y 1)
+    (x-offset 2)
+    (y-offset 0)
+    (color1 (color-rgba 0.75294117647058822 0.75294117647058822 0.75294117647058822 1))
+    (color2 (color-rgba 1 1 0 1)))
+(GimpGegl-gegl-checkerboard-config "2022-04-28 15:57:16"
+    (time 1651179436)
+    (x 1)
+    (y 1)
+    (x-offset 1)
+    (y-offset 0)
+    (color1 (color-rgba 0.75294117647058822 0.75294117647058822 0.75294117647058822 1))
+    (color2 (color-rgba 1 1 0 1)))
+(GimpGegl-gegl-checkerboard-config "2022-04-28 15:46:14"
+    (time 1651178774)
+    (x 1)
+    (y 1)
+    (x-offset 0)
+    (y-offset 0)
+    (color1 (color-rgba 0.75294117647058822 0.75294117647058822 0.75294117647058822 1))
+    (color2 (color-rgba 1 1 0 1)))
+(GimpGegl-gegl-checkerboard-config "2022-04-28 15:15:27"
+    (time 1651176927)
+    (x 1)
+    (y 1)
+    (x-offset 0)
+    (y-offset 0)
+    (color1 (color-rgba 1 1 1 1))
+    (color2 (color-rgba 1 1 0 1)))
+
+# end of settings

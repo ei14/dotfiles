@@ -26,6 +26,7 @@ end
 
 set -x EDITOR /bin/vim
 set -x _JAVA_AWT_WM_NONREPARENTING 1
+set -x XDG_DATA_HOME /home/tk/.local/share
 fish_add_path /home/tk/.local/share/gem/ruby/3.0.0/bin
 fish_add_path /home/tk/.local/bin
 
@@ -56,6 +57,9 @@ end
 
 # ABBREVIATED COMMANDS
 
+function l
+	ls $argv
+end
 function la
 	ls -a $argv
 end
@@ -98,6 +102,10 @@ function arec
 	ffmpeg  -f pulse -ac 2 -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor  ~/ss/(date +%s).ogg
 end
 
+function bnoise
+	play -c 2 --null synth brownnoise band -n 1 $argv
+end
+
 # SYSTEM SETTINGS
 
 function conserve
@@ -117,16 +125,31 @@ function vlores
 	xrandr -s 320x240
 end
 
+function white
+	echo -e "\033[48;2;255;255;255m\033[2J"
+end
+
 function woff
 	sudo netctl stop-all
 end
 function wslow
 	sudo netctl stop-all
 	sudo netctl start wlp2s0-slowxfinity
+	echo "Waiting for connection..."
+	netctl wait-online wlp2s0-slowxfinity
+	echo "Finished waiting."
 end
 function wslower
 	sudo netctl stop-all
 	sudo netctl start wlp2s0-slowerxfinity
+	echo "Waiting for connection..."
+	netctl wait-online wlp2s0-slowerxfinity
+	echo "Finished waiting."
+end
+function wwait
+	echo "Waiting for connection..."
+	netctl wait-online (netctl list | grep "\*.*" | cut -c 3-)
+	echo "Finished waiting."
 end
 
 # MISC COMMANDS

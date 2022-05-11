@@ -6,17 +6,20 @@
 # Most values can be set within GIMP by changing some options in the
 # Preferences dialog.
 
+(thumbnail-size large)
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
+(transparency-size small-checks)
 (monitor-xresolution 118)
 (monitor-yresolution 118)
 (toolbox-groups no)
-(icon-theme "Symbolic-High-Contrast")
-(image-convert-indexed-palette-type mono)
-(image-convert-indexed-max-colors 2)
-(image-resize-fill-type foreground)
+(theme "System")
+(icon-theme "Legacy")
+(icon-size medium)
+(color-profile-policy convert)
+(image-convert-indexed-max-colors 3)
 (image-resize-layer-set all)
-(selection-grow-radius 4)
-(selection-shrink-radius 10)
+(selection-border-radius 1)
+(selection-border-style hard)
 (fill-options
     (style solid)
     (antialias yes)

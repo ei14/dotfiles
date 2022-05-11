@@ -1,7 +1,7 @@
 # settings
 
-(GimpGegl-gegl-image-gradient-config "2022-03-03 23:12:36"
-    (time 1646370756)
+(GimpGegl-gegl-image-gradient-config "2022-03-06 02:59:39"
+    (time 1646557179)
     (output-mode magnitude))
 
 # end of settings
